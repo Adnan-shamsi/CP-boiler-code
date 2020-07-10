@@ -1,3 +1,5 @@
+//REMEMBER ARRSIZE IS NOT GIVEN  
+
 #include <bits/stdc++.h>
 #define MOD  (int)(1e9+7)
 #define SIZE (int)(1e5+5)
