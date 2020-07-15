@@ -30,7 +30,7 @@ void dfs(int node,int par) // node,parent
     if(item == par) // if item is par
     { 
       cnt_parent++; 
-      if(cnt_parent != 2) // if cnt par is 2 we will traverse else continue
+      if(cnt_parent != 2) // if cnt par is 2 we will not continue but will do dfs on parent node
       continue;
     }
     
