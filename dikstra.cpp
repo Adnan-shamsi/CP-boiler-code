@@ -41,7 +41,7 @@ void show_path_if_any(int n)
 }
 
 vector<pair<int,int>> graph[ARRSIZE];   //in pair first value then vertex
-vector <int64_t> dist((ARRSIZE ,LLONG_MAX); //init by infinity
+vector <int64_t> dist(ARRSIZE ,LLONG_MAX); //init by infinity
 
 void dikstra()
 {
