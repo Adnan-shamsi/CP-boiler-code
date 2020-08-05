@@ -40,7 +40,7 @@ void show_path_if_any(int n)
 
 }
 
-vector<pair<int,int>> graph[ARRSIZE];   //in pair first value then vertex
+vector<pair<int64_t,int>> graph[ARRSIZE];   //in pair first value then vertex
 vector <int64_t> dist(ARRSIZE ,LLONG_MAX); //init by infinity
 
 void dikstra()
@@ -53,7 +53,7 @@ void dikstra()
 
   while(SET.size() != 0)
   {
-    int value  = (*SET.begin()).F;//getting value
+    int64_t value  = (*SET.begin()).F;//getting value
     int vertex = (*SET.begin()).S;//getting vertex
 
     SET.erase(SET.begin()); //deleting the min distance known node from set
