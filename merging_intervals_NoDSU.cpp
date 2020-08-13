@@ -1,5 +1,5 @@
 //merging intervals
-//I have used set because deletion takes O(logn) 
+//I have used set because deletion takes O(logn) and we need sorted order to combine intervals  
 //eg [{1,3}{2,5}{8,8}] before merging
 //   [{1,5}{8,8}] after merging 
 // you can use this to solve https://www.hackerrank.com/challenges/gridland-metro/problem
