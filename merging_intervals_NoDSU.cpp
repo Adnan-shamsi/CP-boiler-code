@@ -2,7 +2,7 @@
 //I have used set because deletion takes O(logn) 
 //eg [{1,3}{2,5}{8,8}] before merging
 //   [{1,5}{8,8}] after merging 
-// you can use this to solve https://www.hackerrank.com/challenges/gridland-metro/submissions/code/174013502
+// you can use this to solve https://www.hackerrank.com/challenges/gridland-metro/problem
 
 void merging_intervals(set<pair<int,int>>& s)
 {
