@@ -1,7 +1,7 @@
 //MO's Algorithm 
 //time complity 0(q*sqrt(n))
 //for Offline queries only
-//in all the quesiton whole code remains same just add and remove function change
+//in all the questions whole code remains same just add and remove function changes
 //question link https://cses.fi/problemset/task/1734
 
 #include <bits/stdc++.h>
@@ -77,7 +77,7 @@ void adjust(int& curr_l,int& curr_r,int& dest_l,int& dest_r,vector<int>& arr)
 //MO's algorithm
 void MOs(int& n,int& q,vector<int>& arr,vector<Node>& query)
 {
-  int rn = 600; //square root of n becuse if rn will be sqrt n = max 447 ,then more blocks needed and may time out  
+  int rn = 600; //smaller value of rn may time out time out sqrt(2e5) = 447 ,it may time out because more block will be created  
   
   //taking query as input
   for(int i=0;i<q;i++)
