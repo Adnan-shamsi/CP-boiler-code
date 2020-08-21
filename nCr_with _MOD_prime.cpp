@@ -14,5 +14,5 @@ void solve()
   int64_t den = (fact[r] * fact[n - r]) % MOD; // n!/(r!(n-r)!)   , den = denominator , we we can multipy 
   int64_t den_inverse = power(den,MOD-2,MOD); //using Fermat's Little theorem if MOD is prime  
   int64_t nCr = (fact[n] * den_inverse) % MOD;  //since we are applying Modular nCr we have to use modular inverse of denominator
-                                              // and multiply it with numerator ;
+                                              // and multiply it with numerator then take mod of that multiplication;
 }
