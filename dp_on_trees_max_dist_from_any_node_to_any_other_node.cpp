@@ -1,3 +1,8 @@
+//dp on trees max dist from any node to any other node in 0(n);
+//for more information read this article
+//https://www.geeksforgeeks.org/dynamic-programming-trees-set-2/?ref=rp
+//if you want to do question on it try out https://cses.fi/problemset/task/1132
+
 vector <int> graph[(int)2e5 + 1];
 
 //in array is for subgraph , whereas out is for parent  
