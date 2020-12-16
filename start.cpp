@@ -103,6 +103,7 @@ vector<int64_t> seiveErath(int n)
 
 void solve()
 {
+  
 }
 
 int main()
