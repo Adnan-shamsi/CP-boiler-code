@@ -19,7 +19,6 @@
 #define get_element_by_key(x) find_by_order(x) 
 #define get_key(x)            order_of_key(x)
 #define debug(x)              cout<<#x<<" = "<<x<<"\n";
-#define error(args...)        { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
 using namespace std;
 using namespace __gnu_pbds; 
 
@@ -28,6 +27,13 @@ typedef tree<int64_t, null_type,less<int64_t>, rb_tree_tag, tree_order_statistic
 typedef tree<int64_t, null_type, less_equal<int64_t>, rb_tree_tag,tree_order_statistics_node_update> indexed_multiset;
 //find_by_order(x) -> returns an iterator to the element at a given position
 //order_of_key(x) -> returns the position of a given element
+
+//error will work only on your machine , and wont lead you to timeout   
+#ifndef ONLINE_JUDGE
+  #define error(args...)        { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
+#else
+  #define error(args...) 0;
+#endif
 
 void err(istream_iterator<string> it) {}
 template<typename T, typename... Args>
