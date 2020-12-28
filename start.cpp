@@ -117,6 +117,7 @@ int main()
   #endif   
   
   int q=1;
+  //preCalc();
   //seiveErath((int)2e7);
   //cin>>q;
   //memset(dp,-1,sizeof(dp));
@@ -124,11 +125,6 @@ int main()
   {
     solve();
   }
-
-  //REMEMBER TO REMOVE ALL error() 
-  //BECAUSE IT PASSES CODEFORCES JUDGE BUT 
-  //IT SLOWS DOWN CODE TREMENDOUSLY AND CAN CAUSE TLE
-  //REMEMBER ONCE 77MS CODE BECAME 865MS CODE ON ADDING error()  
   
   #ifndef ONLINE_JUDGE
    cout << "\nTimes Elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " sec\n";
