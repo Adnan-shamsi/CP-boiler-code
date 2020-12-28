@@ -97,6 +97,8 @@ vector<int64_t> seiveErath(int n)
   return prime;    
 }
 
+/************************************** MAIN PROGRAM ********************************************/
+
 //int64_t dp[(int)1e5+10][2]; 
 //int visited[(int)2e5 + 1];
 //vector <int> graph[(int)2e5 + 1];
