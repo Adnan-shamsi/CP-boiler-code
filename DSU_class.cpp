@@ -1,11 +1,13 @@
-//dsu struct 1 is the starting
+//dsu class 1 is the starting
 
-struct dsu_struct
+class DSU
 {
+  public:
+  
   vector<int> par; //parent of node 
   int total_comp;  //total component
 
-  void init(int n)
+  void DSU(int n)
   { //index 1 is the starting 
     total_comp = n;
     par.resize(n+1);
@@ -18,7 +20,7 @@ struct dsu_struct
     else return par[x] = get_super_parent(par[x]); 
   }
 
-  void merge(int x,int y)
+  int merge(int x,int y)
   {
     int super_par_x = get_super_parent(x);
     int super_par_y = get_super_parent(y);
@@ -27,6 +29,8 @@ struct dsu_struct
     {
       par[super_par_x]=super_par_y;
       total_comp--;
+      return 1;
     }
+    return 0;
   }
 }; 
