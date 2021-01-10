@@ -7,7 +7,7 @@ class DSU
   vector<int> par; //parent of node 
   int total_comp;  //total component
 
-  void DSU(int n)
+  DSU(int n)
   { //index 1 is the starting 
     total_comp = n;
     par.resize(n+1);
