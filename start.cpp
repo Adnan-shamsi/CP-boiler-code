@@ -54,7 +54,7 @@ template<typename T> void print(multiset <T> v){ for(auto item:v)cout<<item<<" "
 template<typename T,typename G> void print(map <T,G> v){ for(auto item:v) cout<<"{"<<item.first<<"=>"<<item.second<<"},"<<" ";cout<<"\n";} 
 
 //with mod
-int64_t power(int64_t base,int exp,int64_t mod)
+int64_t power(int64_t base,int64_t exp,int64_t mod)
 {
     if (exp == 0) return 1;
     if (exp == 1) return base % mod;
@@ -67,7 +67,7 @@ int64_t power(int64_t base,int exp,int64_t mod)
      return (base * t) % mod;
 }
 //without mod
-int64_t power(int64_t base,int exp)
+int64_t power(int64_t base,int64_t exp)
 {
     if (exp == 0) return 1;
     if (exp == 1) return base;
