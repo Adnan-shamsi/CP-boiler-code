@@ -12,10 +12,10 @@ class Fenwick{
   } 
   
   int64_t query(int idx){
-    int64_t ans=0;
-    idx = min((int)arr.size(), idx);
+    int64_t ans = 0;
+    idx = min(((int)arr.size()) - 1, idx);
     
-    while(idx){
+    while(idx > 0){
       ans += arr[idx];
       idx -= idx & -idx;
     }
